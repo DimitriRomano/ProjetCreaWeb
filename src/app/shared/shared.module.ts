@@ -10,6 +10,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     ButtonComponent,
     NavbarComponent
   ],
+  exports: [
+    NavbarComponent
+  ],
   imports: [
     CommonModule
   ]
