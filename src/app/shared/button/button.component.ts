@@ -46,8 +46,9 @@ export class ButtonComponent implements OnInit {
       textTransform: this.respectCase ? 'none' : 'uppercase',
       cursor: 'pointer',
       padding: '6px 8px',
-      width: this.fullWidth ? '100%' : 'fit-content',
+      width: this.fullWidth ? 'calc(100% - 16px)' : 'fit-content',
       filter: this.hover ? 'brightness(110%)' : 'none',
+      textAlign: 'center',
     };
   }
 }
