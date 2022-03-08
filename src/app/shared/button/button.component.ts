@@ -37,22 +37,16 @@ export class ButtonComponent implements OnInit {
   ngOnInit(): void {}
 
   get style() {
-    const usedColor = CSS.supports('color', this.color)
-      ? this.color
-      : this.defaultColor;
-    const usedBorderRadius = CSS.supports('borderRadius', this.borderRadius)
-      ? this.borderRadius
-      : this.defaultRadius;
     return {
-      color: this.variant === 'contained' ? '#F7F7F7' : usedColor,
+      color: this.variant === 'contained' ? '#F7F7F7' : this.color,
       border: this.variant === 'outlined' ? '1px solid' : 'none',
-      borderColor: usedColor,
-      backgroundColor: this.variant === 'contained' ? usedColor : 'none',
-      borderRadius: usedBorderRadius,
+      borderColor: this.color,
+      backgroundColor: this.variant === 'contained' ? this.color : 'none',
+      borderRadius: this.borderRadius,
       textTransform: this.respectCase ? 'none' : 'uppercase',
       cursor: 'pointer',
       padding: '6px 8px',
-      width: 'fit-content',
+      width: this.fullWidth ? '100%' : 'fit-content',
       filter: this.hover ? 'brightness(110%)' : 'none',
     };
   }
