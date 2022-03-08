@@ -18,8 +18,14 @@
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
+<<<<<<< HEAD
     "@fontsource/roboto": "^4.5.3",
     "dotenv": "^16.0.0",
+=======
+    "@types/mapbox-gl": "^2.6.3",
+    "dotenv": "^16.0.0",
+    "mapbox-gl": "^2.7.0",
+>>>>>>> 373a2f9a3f042337dc95b083eb2a86e7cc9bf921
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
