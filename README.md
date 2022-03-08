@@ -1,27 +1,11 @@
-# Cycle
+# ProjetCreaWeb - Application de promotion du vélo et de ses bienfaits
+## CYCLE.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
+> Membres :
+>
+> - Dev : Raphael MARIE, Dimitri ROMANO, Romain MOLINA, François BONNIN
 
-## Development server
+<a href="https://www.figma.com/file/wAs8MjaKV88q44EZbWhADy/Untitled?node-id=0%3A1"> <img src="https://i.goopics.net/yqk5bo.png" width= 150px> </a>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<a href="https://www.notion.so/fbonnin/BIKOLOGY-00b54f3d4a874114ad92d299725b8121" rel="Notion"><img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" width=150px> </a>
+<a href ="https://xd.adobe.com/view/6c4048d0-f7e6-4cee-81ba-2fe89a2cd7b3-3913/screen/4eb338ce-43ef-491a-acee-cdf922590647"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/788px-Adobe_XD_CC_icon.svg.png" width=150px></a>
