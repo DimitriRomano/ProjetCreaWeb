@@ -7,6 +7,6 @@ import { CardSimpleComponent } from './card/card-simple/card-simple.component';
 @NgModule({
   declarations: [ButtonComponent, NavbarComponent, CardSimpleComponent],
   imports: [CommonModule],
-  exports: [ButtonComponent, NavbarComponent],
+  exports: [ButtonComponent, NavbarComponent, CardSimpleComponent],
 })
 export class SharedModule {}
