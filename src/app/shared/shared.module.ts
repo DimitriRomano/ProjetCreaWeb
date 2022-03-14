@@ -2,11 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './button/button.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { CardSimpleComponent } from './card/card-simple/card-simple.component';
+import { CardTextComponent } from './card/card-text/card-text.component';
+import { CardImageComponent } from './card/card-image/card-image.component';
 
 @NgModule({
-  declarations: [ButtonComponent, NavbarComponent, CardSimpleComponent],
+  declarations: [ButtonComponent, NavbarComponent, CardTextComponent, CardImageComponent],
   imports: [CommonModule],
-  exports: [ButtonComponent, NavbarComponent, CardSimpleComponent],
+  exports: [ButtonComponent, NavbarComponent, CardTextComponent, CardImageComponent],
 })
 export class SharedModule {}
