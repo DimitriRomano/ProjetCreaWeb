@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cycle';
+  get style() {
+    return {
+      display: 'flex',
+      margin: '8px 6px',
+      width: '25em',
+      justifyContent: 'space-between',
+    };
+  }
 }

@@ -1,3 +1,19 @@
 <shared-navbar></shared-navbar>
-<shared-button text="test" variant="outlined" color="#E8E" [fullWidth]="true"></shared-button>
+<div [ngStyle]="style">
+    <shared-button variant="contained" color="#E8E"></shared-button>
+    <shared-button variant="outlined" color="lightgreen"></shared-button>
+    <shared-button variant="text" color="#E8E"></shared-button>
+    <shared-button [uppercase]="true" variant="text" color="#000"></shared-button>
+    <div style="background-color:'#7E7'; width: '200px';padding:'5px'; display: flex; flex-direction: column;">
+        <shared-button variant="contained" color="#000" [fullWidth]="true"></shared-button>
+        <shared-button variant="contained" color="#E8E"></shared-button>
+    </div>
+
+
+</div>
+<div>
+    <profile-badge img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZBZgpadvnLQBPqEzSM5yQ32yOUqH5tGtEFKpGIiqQ8ReSGPQHn-N8XvxAjHoZ9lBFu_g&usqp=CAU"></profile-badge>
+</div>
+
+
 <router-outlet></router-outlet>
