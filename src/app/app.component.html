@@ -1,30 +1,29 @@
-
-<shared-navbar></shared-navbar>
-<div [ngStyle]="style">
-    <shared-button variant="contained" color="#E8E"></shared-button>
-    <shared-button variant="outlined" color="lightgreen"></shared-button>
-    <shared-button variant="text" color="#E8E"></shared-button>
-    <shared-button [uppercase]="true" variant="text" color="#000"></shared-button>
-    <div style="background-color:'#7E7'; width: '200px';padding:'5px'; display: flex; flex-direction: column;">
-        <shared-button variant="contained" color="#000" [fullWidth]="true"></shared-button>
+<shared-navbar>
+</shared-navbar>
+<div class="content" style="height: 85vh;overflow-y: auto;overflow-x: hidden;">
+    <div [ngStyle]="style">
         <shared-button variant="contained" color="#E8E"></shared-button>
+        <shared-button variant="outlined" color="lightgreen"></shared-button>
+        <shared-button variant="text" color="#E8E"></shared-button>
+        <shared-button [uppercase]="true" variant="text" color="#000"></shared-button>
+        <div style="background-color:'#7E7'; width: '300px';padding:'5px'; display: flex; flex-direction: column;">
+            <shared-button variant="contained" color="#000" [fullWidth]="true"></shared-button>
+            <shared-button variant="contained" color="#E8E"></shared-button>
+        </div>
+
+    </div>
+    <div>
+        <profile-badge img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZBZgpadvnLQBPqEzSM5yQ32yOUqH5tGtEFKpGIiqQ8ReSGPQHn-N8XvxAjHoZ9lBFu_g&usqp=CAU"></profile-badge>
     </div>
 
-</div>
-<div>
-    <profile-badge img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZBZgpadvnLQBPqEzSM5yQ32yOUqH5tGtEFKpGIiqQ8ReSGPQHn-N8XvxAjHoZ9lBFu_g&usqp=CAU"></profile-badge>
+    <shared-card-text title="Se déplacer, mieux." subtitle="Les petits gestes qui changent tout." paragraph="Déplacez vous dès au aujourd’hui tout en participant a un cycle durable. Comment ? Découvrez un réseau de vélos performants dans votre ville et un système de cash-back amusant. Le tout en prenant soin de notre planète !"
+        textButton="Qui sommes nous ?">
+    </shared-card-text>
+    <shared-card-text title="Se déplacer, mieux." subtitle="Les petits gestes qui changent tout." textButton="En savoir plus"></shared-card-text>
+    <shared-card-image title="Application." subtitle="Partout avec vous." nameImage="phone.png" textButton="Découvrir">
+
+    </shared-card-image>
+    <router-outlet></router-outlet>
 </div>
 
-<shared-card-text title="Se déplacer, mieux." subtitle="Les petits gestes qui changent tout."
-               paragraph="Déplacez vous dès au aujourd’hui tout en participant a un cycle durable. Comment ? Découvrez un réseau de vélos performants dans votre ville et un système de cash-back amusant. Le tout en prenant soin de notre planète !"
-               textButton="Qui sommes nous ?">
-</shared-card-text>
-<shared-card-text title="Se déplacer, mieux." subtitle="Les petits gestes qui changent tout."
-               textButton="En savoir plus"></shared-card-text>
-<shared-card-image title="Application." subtitle="Partout avec vous."
-                nameImage="phone.png"
-                textButton="Découvrir">
-
-</shared-card-image>
-<router-outlet></router-outlet>
 <shared-footer></shared-footer>
