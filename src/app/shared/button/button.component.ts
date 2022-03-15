@@ -100,7 +100,8 @@ export class ButtonComponent implements OnInit {
       filter: this.hover ? 'brightness(110%)' : 'none',
       textAlign: 'center',
       fontSize: this.fontSize,
-
+      display: 'block',
+      whiteSpace: 'nowrap',
     };
   }
 }
