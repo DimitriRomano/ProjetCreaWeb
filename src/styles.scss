@@ -6,6 +6,21 @@
 @import "@fontsource/roboto/index.css";
 * {
     font-family: "Roboto";
+
+@font-face {
+  font-family: "IKEA sans";
+  src: local("IKEA"), url("./assets/fonts/IKEASans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gill Sans";
+  src: local("Gilroy-Medium"), url("./assets/fonts/Gilroy-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-size: "Helvetica Neue";
+  src: local("HelveticaNeue");
+
 }
 
 :root {
