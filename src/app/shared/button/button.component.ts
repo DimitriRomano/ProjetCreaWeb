@@ -45,7 +45,6 @@ export class ButtonComponent implements OnInit {
       borderRadius: this.borderRadius,
       textTransform: this.respectCase ? 'none' : 'uppercase',
       cursor: 'pointer',
-      margin: '1rem 0 0',
       padding: '16px 64px',
       width: this.fullWidth ? '100%' : 'fit-content',
       filter: this.hover ? 'brightness(110%)' : 'none',

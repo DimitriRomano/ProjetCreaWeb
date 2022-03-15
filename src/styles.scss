@@ -17,34 +17,3 @@
   font-size: "Helvetica Neue";
   src: local("HelveticaNeue");
 }
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 64px;
-  margin : 10rem;
-  box-shadow: 0px 10px 20px #74747429;
-  border-radius: 4px;
-}
-
-.card h2 {
-  font-family: 'IKEA sans';
-  font-weight: bold;
-  font-size: 40px;
-  color: #000;
-}
-
-.card span {
-  font-family: 'Gill Sans';
-  font-size: 37px;
-  letter-spacing: 0px;
-  color: #9F9A9A;
-}
-
-.card p{
-  font-family: 'Helvetica Neue', "Gill Sans";
-  font-size: 30px;
-  color: #000;
-  line-height: 1;
-  margin: 1rem 0;
-}

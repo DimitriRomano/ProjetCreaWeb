@@ -1,7 +1,7 @@
 <div class="card" [style]="style">
   <h2> {{ title }}</h2>
   <span> {{ subtitle }}</span>
-  <p>{{ paragraph }}</p>
+  <p *ngIf="paragraph">{{ paragraph }}</p>
   <shared-button text="{{ textButton }}" variant="contained" [respectCase]="true" color="#A1CE97"
                  [fullWidth]="false"></shared-button>
 </div>

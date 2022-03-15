@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-card-text',
+  selector: 'shared-card-text',
   templateUrl: './card-text.component.html',
   styleUrls: ['./card-text.component.scss']
 })
