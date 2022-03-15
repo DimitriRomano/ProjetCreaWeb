@@ -25,14 +25,26 @@ export class ButtonComponent implements OnInit {
   @Input()
   variant: 'text' | 'contained' | 'outlined' = 'contained';
 
+  /**
+   * font size of text
+   * (default 30px)
+   */
   @Input()
   fontSize = '30px';
 
+  /**
+   * padding block
+   * (default 16px)
+   */
   @Input()
-  px = '16px';
+  py = '16px';
 
+  /**
+   * padding inline
+   * (default 64px)
+   */
   @Input()
-  py = '64px';
+  px = '64px';
 
   /**
    * disabled
@@ -82,8 +94,8 @@ export class ButtonComponent implements OnInit {
       borderRadius: this.borderRadius,
       textTransform: this.uppercase ? 'uppercase' : 'none',
       cursor: 'pointer',
-      paddingInline: this.py,
-      paddingBlock: this.px,
+      paddingInline: this.px,
+      paddingBlock: this.py,
       width: this.fullWidth ? 'calc(100% - 16px)' : 'fit-content',
       filter: this.hover ? 'brightness(110%)' : 'none',
       textAlign: 'center',
