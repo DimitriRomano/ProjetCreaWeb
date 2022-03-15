@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
 import { CardTextComponent } from './card/card-text/card-text.component';
 import { CardImageComponent } from './card/card-image/card-image.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,13 @@ import { CardImageComponent } from './card/card-image/card-image.component';
     CardTextComponent,
     CardImageComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, FontAwesomeModule],
   exports: [
     ButtonComponent,
     NavbarComponent,
     CardTextComponent,
     CardImageComponent,
+    FooterComponent,
   ],
 })
 export class SharedModule {}
