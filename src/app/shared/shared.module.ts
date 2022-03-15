@@ -5,11 +5,13 @@ import {NavbarComponent} from './navbar/navbar.component';
 import {RouterModule} from "@angular/router";
 import {FooterComponent} from './footer/footer.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import { CardTextComponent } from './card/card-text/card-text.component';
+import { CardImageComponent } from './card/card-image/card-image.component';
 
 @NgModule({
-  declarations: [ButtonComponent, NavbarComponent, FooterComponent],
-  imports: [CommonModule, RouterModule, FontAwesomeModule],
-  exports: [ButtonComponent, NavbarComponent, FooterComponent],
+  declarations: [ButtonComponent, NavbarComponent,FooterComponent, CardTextComponent, CardImageComponent],
+  imports: [CommonModule],
+  exports: [ButtonComponent, NavbarComponent, CardTextComponent, CardImageComponent],
 })
 export class SharedModule {
 }

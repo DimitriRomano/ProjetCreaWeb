@@ -15,6 +15,7 @@ module.exports = {
         'cycle-ld': ['37px', '43px'],
         'cycle-xl': ['40px', '49px'],
       }
+
     },
   },
   plugins: [],
