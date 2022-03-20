@@ -19,12 +19,13 @@ import { PartnerComponent } from './card/partner/partner.component';
     PartnerComponent,
   ],
   imports: [CommonModule, FontAwesomeModule],
-  exports: [
-    ButtonComponent,
-    NavbarComponent,
-    CardTextComponent,
-    CardImageComponent,
-    FooterComponent,
-  ],
+    exports: [
+        ButtonComponent,
+        NavbarComponent,
+        CardTextComponent,
+        CardImageComponent,
+        FooterComponent,
+        PartnerComponent,
+    ],
 })
 export class SharedModule {}

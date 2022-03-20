@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import partners from './dataPartners.json';
 
 @Component({
   selector: 'app-partner',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PartnerComponent implements OnInit {
 
+  public partnersList : {name:string,imageName:string}[] = partners;
   constructor() { }
 
   ngOnInit(): void {
