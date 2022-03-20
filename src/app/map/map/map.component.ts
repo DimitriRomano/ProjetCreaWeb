@@ -9,16 +9,18 @@ import mapboxgl from 'mapbox-gl';
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit {
-  //data
-  source: any;
-  markers: any;
 
-  constructor(private mapS: MapService) { }
+
+  constructor(private mapService: MapService) { }
   
   ngOnInit(): void {
-    this.mapS.buildMap();
-    this.mapS.creatMarker(43.61046618152723,1.4319085156059725);
+    this.mapService.buildMap()
+    .then((data) => {
+      console.log('tout va bien map');
+    })
+    .catch((err) => {
+    console.log('error',err);
+    })
 
   }
-
-}
+} 
