@@ -1,0 +1,12 @@
+@import "../card";
+
+.partnerSwipe{
+  @apply w-max
+}
+
+.partner-card{
+  @apply flex-row items-center m-5
+}
+
+.partner-card img{
+  @apply h-24 w-24 object-contain mr-8 }
