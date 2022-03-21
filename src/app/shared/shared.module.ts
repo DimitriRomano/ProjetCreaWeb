@@ -8,6 +8,7 @@ import { CardTextComponent } from './card/card-text/card-text.component';
 import { CardImageComponent } from './card/card-image/card-image.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PartnerComponent } from './card/partner/partner.component';
+import { CardDoubleColComponent } from './card/card-double-col/card-double-col.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { PartnerComponent } from './card/partner/partner.component';
     CardTextComponent,
     CardImageComponent,
     PartnerComponent,
+    CardDoubleColComponent,
   ],
   imports: [CommonModule, FontAwesomeModule],
     exports: [
@@ -26,6 +28,7 @@ import { PartnerComponent } from './card/partner/partner.component';
         CardImageComponent,
         FooterComponent,
         PartnerComponent,
+        CardDoubleColComponent,
     ],
 })
 export class SharedModule {}
