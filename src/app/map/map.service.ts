@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import mapboxgl, { Marker } from 'mapbox-gl';
+import mapboxgl from 'mapbox-gl';
 import { geojson } from './datamap';
 import { HttpClient } from '@angular/common/http';
 import { GeoJson } from './i-map';
