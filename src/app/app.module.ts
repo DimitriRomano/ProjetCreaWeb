@@ -8,9 +8,11 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { MapModule } from './map/map.module';
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileModule } from './profile/profile.module';
+import { AboutComponent } from './templates/about/about.component';
+import { HomeComponent } from './templates/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, AboutComponent, HomeComponent],
   imports: [BrowserModule, AppRoutingModule, MapModule, SharedModule, ProfileModule],
   providers: [],
   bootstrap: [AppComponent],
