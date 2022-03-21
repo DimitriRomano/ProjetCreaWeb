@@ -11,7 +11,7 @@ import { ProfileModule } from './profile/profile.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, MapModule],
+  imports: [BrowserModule, AppRoutingModule, MapModule, SharedModule],
   providers: [],
   bootstrap: [AppComponent],
 })
