@@ -1,0 +1,53 @@
+@use "/src/styles.scss" as style;
+.text {
+    font: 400 28px / 36px Metropolis, "IKEA Sans", normal;
+    letter-spacing: 0px;
+    color: #160637;
+    whiteSpace: 'nowrap',
+}
+
+.stat-title {
+    position: relative;
+    font: 400 28px / 36px Metropolis, "IKEA Sans", normal;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #160637;
+    &:after {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 3px;
+        position: absolute;
+        background: var(--cycle-green);
+        right: - calc(56px + 18.5px);
+        top: 50%;
+        z-index: -2;
+        opacity: 0.48;
+    }
+    &:before {
+        content: "";
+        display: block;
+        width: 56px;
+        height: 3px;
+        position: absolute;
+        background: var(--cycle-green);
+        left: - calc(56px + 18.5px);
+        top: 50%;
+        z-index: -2;
+        opacity: 0.48;
+    }
+}
+
+:host ::ng-deep .slider .mat-slider-thumb {
+    background-color: var(--cycle-green);
+}
+
+.info {
+    font-size: small;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    border: 2px solid var(--cycle-green);
+    border-radius: 18px;
+    color: var(--cycle-green);
+}
