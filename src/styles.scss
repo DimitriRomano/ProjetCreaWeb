@@ -57,3 +57,11 @@
         letter-spacing: var(--subtitle-character-spacing);
         color: var(--cycle-grey);
     }
+
+    *, html, body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
