@@ -13,9 +13,10 @@ import { ConnectionChoicesComponent } from './pages/connection-choices/connectio
 import { LoginComponent } from './pages/login/login.component';
 import { ServiceHomeComponent } from './pages/service-home/service-home.component';
 import { ServicePartnerComponent } from './pages/service-partner/service-partner.component';
+import { ServiceApplicationComponent } from './pages/service-application/service-application.component';
 
 @NgModule({
-  declarations: [AppComponent, ConnectionChoicesComponent, LoginComponent, ServiceHomeComponent, ServicePartnerComponent],
+  declarations: [AppComponent, ConnectionChoicesComponent, LoginComponent, ServiceHomeComponent, ServicePartnerComponent, ServiceApplicationComponent],
   imports:[BrowserModule ,AppRoutingModule, MapModule, SharedModule, ProfileModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
