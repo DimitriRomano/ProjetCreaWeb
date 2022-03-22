@@ -13,15 +13,15 @@ import {ServiceApplicationComponent} from "./pages/service-application/service-a
 
 const routes: Routes = [
 
-  {path: 'templates/home,', component: HomeComponent},
+
   {path: 'templates/about', component: AboutComponent},
   {path: 'templates/service', component: ServiceHomeComponent},
   {path: 'templates/partners', component: ServicePartnerComponent},
   {path: 'templates/application', component: ServiceApplicationComponent},
+  {path: 'templates/home', component: HomeComponent},
 
 
   {path: 'map', component: MapComponent},
-
 
   {path: 'profile', component: ConnectionChoicesComponent},
   {
@@ -37,6 +37,18 @@ const routes: Routes = [
   {
     path: 'profile/:type/:id',
     component: ProfilePage,
+  },
+
+  {
+    path: '',
+    redirectTo: 'templates/home',
+    pathMatch: 'full'
+  },
+
+
+  {
+    path: '**',
+    redirectTo: 'templates/home',
   },
 ];
 

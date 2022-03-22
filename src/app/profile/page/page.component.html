@@ -29,7 +29,8 @@
                   </div>
                 </div>
                 <div>
-                  <mat-slider [value]="type==='user'? profile.user[id].stats.kcal :0 " class="slider" disabled="true" max="600"
+                  <mat-slider [value]="type==='user'? profile.user[id].stats.kcal :0 " class="slider" disabled="true"
+                              max="600"
                               min="0"></mat-slider>
                   <div style="transform: translateY(-20px); color: var(--cycle-grey);">
                     {{type === 'user' ? profile.user[id].stats.kcal : 0 }} kcal
@@ -47,7 +48,8 @@
                   </div>
                 </div>
                 <div>
-                  <mat-slider [value]="type==='user'? profile.user[id].stats.euro :0 " class="slider" disabled="true" max="250"
+                  <mat-slider [value]="type==='user'? profile.user[id].stats.euro :0 " class="slider" disabled="true"
+                              max="250"
                               min="0"></mat-slider>
                   <div style="transform: translateY(-20px); color: var(--cycle-grey);">
                     {{type === 'user' ? profile.user[id].stats.euro : 0 }} €
@@ -68,7 +70,8 @@
                   </div>
                 </div>
                 <div>
-                  <mat-slider [value]="type==='user'? profile.user[id].stats.CO2 :0 " class="slider" disabled="true" max="500"
+                  <mat-slider [value]="type==='user'? profile.user[id].stats.CO2 :0 " class="slider" disabled="true"
+                              max="500"
                               min="0"></mat-slider>
                   <div style="transform: translateY(-20px); color: var(--cycle-grey);">
                     {{type === 'user' ? profile.user[id].stats.CO2 : 0 }} kg CO2
@@ -87,7 +90,8 @@
                 </div>
 
                 <div>
-                  <mat-slider [value]="type==='user'? profile.user[id].stats.km :0 " class="slider" disabled="true" max="250"
+                  <mat-slider [value]="type==='user'? profile.user[id].stats.km :0 " class="slider" disabled="true"
+                              max="250"
                               min="0"></mat-slider>
                   <div style="transform: translateY(-20px);color: var(--cycle-grey);">
                     {{type === 'user' ? profile.user[id].stats.km : 0 }} km
@@ -125,7 +129,8 @@
                   </div>
                 </div>
                 <div>
-                  <mat-slider [value]="type==='pro'? profile.pro[id].stats.client :0" class="slider" disabled="true" max="600"
+                  <mat-slider [value]="type==='pro'? profile.pro[id].stats.client :0" class="slider" disabled="true"
+                              max="600"
                               min="0"></mat-slider>
                   <div style="transform: translateY(-20px); color: var(--cycle-grey);">
                     {{type === 'pro' ? profile.pro[id].stats.client : 0 }}
@@ -143,7 +148,8 @@
                   </div>
                 </div>
                 <div>
-                  <mat-slider [value]="type==='pro'? profile.pro[id].stats.given :0" class="slider" disabled="true" max="250"
+                  <mat-slider [value]="type==='pro'? profile.pro[id].stats.given :0" class="slider" disabled="true"
+                              max="250"
                               min="0"></mat-slider>
                   <div style="transform: translateY(-20px); color: var(--cycle-grey);">
                     {{type === 'pro' ? profile.pro[id].stats.given : 0}} €
@@ -164,7 +170,8 @@
                   </div>
                 </div>
                 <div>
-                  <mat-slider [value]="type==='pro'? profile.pro[id].stats.used :0" class="slider" disabled="true" max="500"
+                  <mat-slider [value]="type==='pro'? profile.pro[id].stats.used :0" class="slider" disabled="true"
+                              max="500"
                               min="0"></mat-slider>
                   <div style="transform: translateY(-20px); color: var(--cycle-grey);">
                     {{type === 'pro' ? profile.pro[id].stats.used : 0}} €
@@ -214,3 +221,5 @@
     </div>
   </shared-card>
 </div>
+
+
