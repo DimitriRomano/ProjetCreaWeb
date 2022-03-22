@@ -1,0 +1,23 @@
+{
+    "user": [{
+        "name": "Camille L.",
+        "img": "assets/img/users/camilleL.png",
+        "trophies": ["medal", "recycle", "bicycle", "florist", "flower"],
+        "stats": {
+            "kcal": 202,
+            "euro": 50,
+            "CO2": 130,
+            "km": 60
+        }
+    }],
+    "pro": [{
+        "name": "Bio Café Toulouse",
+        "img": "assets/img/pro/cafeBio.png",
+        "trophies": ["medal", "recycle", "florist"],
+        "stats": {
+            "client": 125,
+            "used": 27,
+            "given": 50
+        }
+    }]
+}

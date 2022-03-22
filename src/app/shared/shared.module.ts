@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CardTextComponent } from './card/card-text/card-text.component';
 import { CardImageComponent } from './card/card-image/card-image.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     FooterComponent,
     CardTextComponent,
     CardImageComponent,
+    CardComponent,
   ],
   imports: [CommonModule, FontAwesomeModule],
   exports: [
@@ -23,6 +25,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     CardTextComponent,
     CardImageComponent,
     FooterComponent,
+    CardComponent,
   ],
 })
 export class SharedModule {}

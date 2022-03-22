@@ -1,59 +1,94 @@
-    /* You can add global styles to this file, and also import other style files */
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$cycle-primary: mat.define-palette(mat.$indigo-palette);
+$cycle-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+// The warn palette is optional (defaults to red).
+$cycle-warn: mat.define-palette(mat.$red-palette);
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$cycle-theme: mat.define-light-theme(( color: ( primary: $cycle-primary, accent: $cycle-accent, warn: $cycle-warn, )));
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($cycle-theme);
 
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
-    @import "@fontsource/roboto/index.css";
-    @font-face {
-        font-family: "IKEA sans";
-        src: local("IKEA"), url("./assets/fonts/IKEASans-Bold.ttf") format("truetype");
-    }
+/* You can add global styles to this file, and also import other style files */
 
-    @font-face {
-        font-family: "Gill Sans";
-        src: local("Gilroy-Medium"), url("./assets/fonts/Gilroy-Medium.ttf") format("truetype");
-    }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "@fontsource/roboto/index.css";
+@font-face {
+    font-family: "IKEA sans";
+    src: local("IKEA"), url("./assets/fonts/IKEASans-Bold.ttf") format("truetype");
+}
 
-    @font-face {
-        font-family: "Helvetica Neue";
-        src: local("HelveticaNeue");
-    }
+@font-face {
+    font-family: "Gill Sans";
+    src: local("Gilroy-Medium"), url("./assets/fonts/Gilroy-Medium.ttf") format("truetype");
+}
 
-     :root {
-        /* Colors: */
-        --cycle-orange: #E69292;
-        --cycle-green: #A1CE97;
-        --cycle-black: #000000;
-        --cycle-grey: #9F9A9A;
-        /* Font/text values */
-        --title-font-family: IKEA Sans;
-        --subtitle-font-family: Gill Sans;
-        --title-font-style: normal;
-        --title-font-weight: bold;
-        --subtitle-font-weight-normal: normal;
-        --subtitle-font-size: 37px;
-        --title-font-size: 60px;
-        --title-character-spacing: 0px;
-        --subtitle-line-spacing: 43px;
-        --title-line-spacing: 74px;
-    }
-    /* Character Styles */
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("HelveticaNeue");
+}
 
-    .title {
-        font-family: var(--title-font-family);
-        font-style: var(--title-font-style-normal);
-        font-weight: var(--title-font-weight-bold);
-        font-size: var(--title-font-size);
-        line-height: var(--title-line-spacing);
-        letter-spacing: var(--title-character-spacing);
-        color: var(--cycle-black);
-    }
+ :root {
+    /* Colors: */
+    --cycle-orange: #E69292;
+    --cycle-green: #A1CE97;
+    --cycle-black: #000000;
+    --cycle-grey: #9F9A9A;
+    /* Font/text values */
+    --title-font-family: IKEA Sans;
+    --subtitle-font-family: Gill Sans;
+    --title-font-style: normal;
+    --title-font-weight: bold;
+    --subtitle-font-weight-normal: normal;
+    --subtitle-font-size: 37px;
+    --title-font-size: 60px;
+    --title-character-spacing: 0px;
+    --subtitle-line-spacing: 43px;
+    --title-line-spacing: 74px;
+}
 
-    .subtitle {
-        font-family: var(--subtitle-font-family);
-        font-style: var(--subtitle-font-style-normal);
-        font-size: var(--subtitle-font-size);
-        line-height: var(--subtitle-line-spacing);
-        letter-spacing: var(--subtitle-character-spacing);
-        color: var(--cycle-grey);
-    }
+
+/* Character Styles */
+
+.title {
+    font-family: var(--title-font-family);
+    font-style: var(--title-font-style-normal);
+    font-weight: var(--title-font-weight-bold);
+    font-size: var(--title-font-size);
+    line-height: var(--title-line-spacing);
+    letter-spacing: var(--title-character-spacing);
+    color: var(--cycle-black);
+}
+
+.subtitle {
+    font-family: var(--subtitle-font-family);
+    font-style: var(--subtitle-font-style-normal);
+    font-size: var(--subtitle-font-size);
+    line-height: var(--subtitle-line-spacing);
+    letter-spacing: var(--subtitle-character-spacing);
+    color: var(--cycle-grey);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
