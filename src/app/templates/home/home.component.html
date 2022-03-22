@@ -3,8 +3,10 @@
     <img alt="{{imageAlt}}" src="assets/img/{{imageSrc}}">
   </div>
   <div class="card-home">
-    <shared-card-text [paragraph]="paragraphe" [subtitle]="subtitle" [textButton]="textButton"
-                      [title]="title"></shared-card-text>
+    <shared-card-text
+      (click)="router.navigateByUrl('/templates/about');" [paragraph]="paragraphe" [subtitle]="subtitle"
+      [textButton]="textButton"
+      [title]="title"></shared-card-text>
   </div>
 
 </div>
