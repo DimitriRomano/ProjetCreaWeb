@@ -10,9 +10,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProfileModule } from './profile/profile.module';
 import { ConnectionChoicesComponent } from './pages/connection-choices/connection-choices.component';
 import { LoginComponent } from './pages/login/login.component';
+import { ServiceHomeComponent } from './pages/service-home/service-home.component';
 
 @NgModule({
-  declarations: [AppComponent, ConnectionChoicesComponent, LoginComponent],
+  declarations: [AppComponent, ConnectionChoicesComponent, LoginComponent, ServiceHomeComponent],
   imports:[BrowserModule ,AppRoutingModule, MapModule, SharedModule, ProfileModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
