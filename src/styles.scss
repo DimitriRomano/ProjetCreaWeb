@@ -16,7 +16,7 @@
 
     @font-face {
         font-family: "Helvetica Neue";
-        src: local("HelveticaNeue");
+        src: local("HelveticaNeue"), url("./assets/fonts/HelveticaNeue.ttf");
     }
 
      :root {
