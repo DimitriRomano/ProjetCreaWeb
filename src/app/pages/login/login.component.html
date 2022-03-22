@@ -1,7 +1,7 @@
 <div class="login-page">
   <div class="forms flex justify-center items-center">
     <div class="testBg max-h-fit shadow w-6/12 flex flex-col justify-center items-center p-5 ">
-      <h1 class="text-2xl font-semibold mb-5 ">Se connecter</h1>
+      <h1 class="text-2xl font-semibold mb-5 ">Se connecter {{type}}</h1>
       <form action="/action_page.php" class=" flex items-center flex-col">
         <input class="border-[1px] border-gray-300 p-2 pl-3 mt-2 -mb-3 w-full rounded" id="form_name" name="form_name"
                placeholder="Adresse mail"
@@ -10,8 +10,8 @@
                placeholder="Mot de passe"
                type="text"><br><br>
 
-        <shared-button class="-mt-8" color="var(--cycle-green)"
-                       fontSize="20" text="Connexion">
+        <shared-button (click)="router.navigateByUrl(url)" class="-mt-8"
+                       color="var(--cycle-green)" fontSize="20" text="Connexion">
           <input type="submit" value="Submit">
         </shared-button>
 

@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import {Component, Input, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 import profileJson from 'src/data/profile.json';
 
 @Component({
@@ -13,28 +13,28 @@ export class PageComponent implements OnInit {
    * (user or pro)
    * (default: user)
    */
-  @Input()
   type: 'user' | 'pro' = 'user';
 
   /**
    * index of the user or pro inside the json
    * (default: 0)
    */
-  @Input()
   id: number = 0;
 
   profile = profileJson;
+
+  constructor(private route: ActivatedRoute) {
+
+  }
 
   get infos() {
     return this.profile[this.type][this.id];
   }
 
-  constructor(private route: ActivatedRoute) {
-    this.route.params.subscribe((params) => {
-      if (params['type']) this.type = params['type'];
-      if (params['id']) this.type = params['id'];
+  ngOnInit(): void {
+    this.route.params.subscribe((data) => {
+      this.type = data['type'];
+      this.id = data['id'];
     });
   }
-
-  ngOnInit(): void {}
 }

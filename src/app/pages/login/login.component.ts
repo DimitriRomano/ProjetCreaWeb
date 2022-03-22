@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 
-ActivatedRoute
 
 @Component({
   selector: 'app-login',
@@ -10,13 +9,19 @@ ActivatedRoute
 })
 export class LoginComponent implements OnInit {
   img: any;
+  type: any;
 
-  constructor(public activatedRoute: ActivatedRoute) {
+  constructor(public activatedRoute: ActivatedRoute, public router: Router) {
+  }
+
+  get url() {
+    return `profile/${this.type}/0`
   }
 
   ngOnInit(): void {
     this.activatedRoute.data.subscribe(data => {
       this.img = data['image'];
+      this.type = data['type']
     })
   }
 

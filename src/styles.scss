@@ -1,67 +1,65 @@
-    /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
 
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
-    @import "@fontsource/roboto/index.css";
-    @font-face {
-        font-family: "IKEA sans";
-        src: local("IKEA"), url("./assets/fonts/IKEASans-Bold.ttf") format("truetype");
-    }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "@fontsource/roboto/index.css";
+@font-face {
+  font-family: "IKEA sans";
+  src: local("IKEA"), url("./assets/fonts/IKEASans-Bold.ttf") format("truetype");
+}
 
-    @font-face {
-        font-family: "Gill Sans";
-        src: local("Gilroy-Medium"), url("./assets/fonts/Gilroy-Medium.ttf") format("truetype");
-    }
+@font-face {
+  font-family: "Gill Sans";
+  src: local("Gilroy-Medium"), url("./assets/fonts/Gilroy-Medium.ttf") format("truetype");
+}
 
-    @font-face {
-        font-family: "Helvetica Neue";
-        src: local("HelveticaNeue"), url("./assets/fonts/HelveticaNeue.ttf");
-    }
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("HelveticaNeue"), url("./assets/fonts/HelveticaNeue.ttf");
+}
 
-     :root {
-        /* Colors: */
-        --cycle-orange: #E69292;
-        --cycle-green: #A1CE97;
-        --cycle-black: #000000;
-        --cycle-grey: #9F9A9A;
-        /* Font/text values */
-        --title-font-family: IKEA Sans;
-        --subtitle-font-family: Gill Sans;
-        --title-font-style: normal;
-        --title-font-weight: bold;
-        --subtitle-font-weight-normal: normal;
-        --subtitle-font-size: 37px;
-        --title-font-size: 60px;
-        --title-character-spacing: 0px;
-        --subtitle-line-spacing: 43px;
-        --title-line-spacing: 74px;
-    }
-    /* Character Styles */
+:root {
+  /* Colors: */
+  --cycle-orange: #E69292;
+  --cycle-green: #A1CE97;
+  --cycle-black: #000000;
+  --cycle-grey: #9F9A9A;
+  /* Font/text values */
+  --title-font-family: IKEA Sans;
+  --subtitle-font-family: Gill Sans;
+  --title-font-style: normal;
+  --title-font-weight: bold;
+  --subtitle-font-weight-normal: normal;
+  --subtitle-font-size: 19px;
+  --title-font-size: 30px;
+  --title-character-spacing: 0px;
+  --subtitle-line-spacing: 21px;
+  --title-line-spacing: 37px;
+}
 
-    .title {
-        font-family: var(--title-font-family);
-        font-style: var(--title-font-style-normal);
-        font-weight: var(--title-font-weight-bold);
-        font-size: var(--title-font-size);
-        line-height: var(--title-line-spacing);
-        letter-spacing: var(--title-character-spacing);
-        color: var(--cycle-black);
-    }
+/* Character Styles */
 
-    .subtitle {
-        font-family: var(--subtitle-font-family);
-        font-style: var(--subtitle-font-style-normal);
-        font-size: var(--subtitle-font-size);
-        line-height: var(--subtitle-line-spacing);
-        letter-spacing: var(--subtitle-character-spacing);
-        color: var(--cycle-grey);
-    }
+.title {
+  font-family: var(--title-font-family);
+  font-style: var(--title-font-style-normal);
+  font-weight: var(--title-font-weight-bold);
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-spacing);
+  letter-spacing: var(--title-character-spacing);
+  color: var(--cycle-black);
+}
 
     *, html, body{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-
-
+.subtitle {
+  font-family: var(--subtitle-font-family);
+  font-style: var(--subtitle-font-style-normal);
+  font-size: var(--subtitle-font-size);
+  line-height: var(--subtitle-line-spacing);
+  letter-spacing: var(--subtitle-character-spacing);
+  color: var(--cycle-grey);
+}
