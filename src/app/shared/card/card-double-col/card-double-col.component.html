@@ -1,0 +1,15 @@
+<div class="card">
+  <h2> {{ title }}</h2>
+  <span> {{ subtitle }}</span>
+  <div class="grid grid-cols-2 gap-8">
+    <div class="pr-3 border-r-2 border-r-[#707070]">
+      <p>{{ paragraphLeft }}</p>
+    </div>
+    <div class="pl-3">
+      <p>{{ paragraphRight }}</p>
+    </div>
+  </div>
+
+  <shared-button class="self-end mr-36" text="{{ textButton }}" variant="contained" color="#8E8E8E"
+                 [fullWidth]="false"></shared-button>
+</div>
