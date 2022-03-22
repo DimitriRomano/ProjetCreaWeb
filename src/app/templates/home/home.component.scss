@@ -1,0 +1,19 @@
+.container-home{
+    display: flex;
+    flex-direction: row;
+    margin: 5rem 5rem 0;
+}
+
+.img-home{
+    display: flex;
+    width: 60%;
+    &> img{
+        object-fit: contain;
+    }
+}
+
+.card-home{
+    display: flex;
+    width: 40%;
+}
+
