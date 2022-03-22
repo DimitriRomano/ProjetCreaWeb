@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import profileJson from 'src/data/profile.json';
 
 @Component({
@@ -28,7 +29,12 @@ export class PageComponent implements OnInit {
     return this.profile[this.type][this.id];
   }
 
-  constructor() {}
+  constructor(private route: ActivatedRoute) {
+    this.route.params.subscribe((params) => {
+      if (params['type']) this.type = params['type'];
+      if (params['id']) this.type = params['id'];
+    });
+  }
 
   ngOnInit(): void {}
 }
