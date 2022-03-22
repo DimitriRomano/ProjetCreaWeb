@@ -1,0 +1,225 @@
+<div style="width:100%;height:100%;display: flex;justify-content: center;align-items: center;  padding-top:5vh">
+  <shared-card height="65vh" width="80vw">
+    <div style="display: flex; width: 100%;height: 100%;">
+      <div *ngIf="type==='user';then user else pro"></div>
+      <ng-template #user>
+        <div
+          style="display:flex;flex-direction: column;justify-content: space-between;align-items: center;width: 55%;height: 100%;padding:2vh 2vw;">
+          <div
+            style="display:flex;flex-direction: column;justify-content: space-between;align-items: center;width: 100%;height: 40%;">
+            <profile-badge [img]="infos.img" h="174px" w="174px"></profile-badge>
+            <div class="profile-name text">
+              {{infos.name}}
+            </div>
+            <div class="stat-title text">
+              Statistiques du mois
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between;width:100%;height: 40%;">
+            <div
+              style="width:45%; display: flex;flex-direction: column; justify-content: space-evenly;align-items: flex-start;">
+              <div style="width:100%;display:flex; flex-direction: column;height: 50%;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <div class="text">
+                    Dépense calorique
+                  </div>
+                  <div class="info">
+                    i
+                  </div>
+                </div>
+                <div>
+                  <mat-slider [value]="type==='user'? profile.user[id].stats.kcal :0 " class="slider" disabled="true"
+                              max="600"
+                              min="0"></mat-slider>
+                  <div style="transform: translateY(-20px); color: var(--cycle-grey);">
+                    {{type === 'user' ? profile.user[id].stats.kcal : 0 }} kcal
+                  </div>
+                </div>
+
+              </div>
+              <div style="width:100%;display:flex; flex-direction: column;height: 50%;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <div class="text">
+                    Économies faites
+                  </div>
+                  <div class="info">
+                    i
+                  </div>
+                </div>
+                <div>
+                  <mat-slider [value]="type==='user'? profile.user[id].stats.euro :0 " class="slider" disabled="true"
+                              max="250"
+                              min="0"></mat-slider>
+                  <div style="transform: translateY(-20px); color: var(--cycle-grey);">
+                    {{type === 'user' ? profile.user[id].stats.euro : 0 }} €
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div
+              style="width:45%;display: flex; flex-direction: column;justify-content: space-between;align-items: flex-start;">
+              <div style="width:100%;display:flex; flex-direction: column;height: 50%;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <div class="text">
+                    Gain Carbonne
+                  </div>
+                  <div class="info">
+                    i
+                  </div>
+                </div>
+                <div>
+                  <mat-slider [value]="type==='user'? profile.user[id].stats.CO2 :0 " class="slider" disabled="true"
+                              max="500"
+                              min="0"></mat-slider>
+                  <div style="transform: translateY(-20px); color: var(--cycle-grey);">
+                    {{type === 'user' ? profile.user[id].stats.CO2 : 0 }} kg CO2
+                  </div>
+                </div>
+
+              </div>
+              <div style="width:100%;display:flex; flex-direction: column;height: 50%;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <div class="text">
+                    Km effectués
+                  </div>
+                  <div class="info">
+                    i
+                  </div>
+                </div>
+
+                <div>
+                  <mat-slider [value]="type==='user'? profile.user[id].stats.km :0 " class="slider" disabled="true"
+                              max="250"
+                              min="0"></mat-slider>
+                  <div style="transform: translateY(-20px);color: var(--cycle-grey);">
+                    {{type === 'user' ? profile.user[id].stats.km : 0 }} km
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+
+      <ng-template #pro>
+        <div
+          style="display:flex;flex-direction: column;justify-content: space-between;align-items: center;width: 55%;height: 100%;padding:2vh 2vw;">
+          <div
+            style="display:flex;flex-direction: column;justify-content: space-between;align-items: center;width: 100%;height: 40%;">
+            <profile-badge [img]="infos.img" h="174px" w="174px"></profile-badge>
+            <div class="profile-name text">
+              {{infos.name}}
+            </div>
+            <div class="stat-title text">
+              Statistiques du mois
+            </div>
+          </div>
+          <div style="display: flex; justify-content: space-between;width:100%;height: 40%;">
+            <div
+              style="width:45%; display: flex;flex-direction: column; justify-content: space-evenly;align-items: flex-start;">
+              <div style="width:100%;display:flex; flex-direction: column;height: 50%;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <div class="text">
+                    Nombres de clients générés
+                  </div>
+                  <div class="info">
+                    i
+                  </div>
+                </div>
+                <div>
+                  <mat-slider [value]="type==='pro'? profile.pro[id].stats.client :0" class="slider" disabled="true"
+                              max="600"
+                              min="0"></mat-slider>
+                  <div style="transform: translateY(-20px); color: var(--cycle-grey);">
+                    {{type === 'pro' ? profile.pro[id].stats.client : 0 }}
+                  </div>
+                </div>
+
+              </div>
+              <div style="width:100%;display:flex; flex-direction: column;height: 50%;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <div class="text">
+                    Bons d’achat attribués
+                  </div>
+                  <div class="info">
+                    i
+                  </div>
+                </div>
+                <div>
+                  <mat-slider [value]="type==='pro'? profile.pro[id].stats.given :0" class="slider" disabled="true"
+                              max="250"
+                              min="0"></mat-slider>
+                  <div style="transform: translateY(-20px); color: var(--cycle-grey);">
+                    {{type === 'pro' ? profile.pro[id].stats.given : 0}} €
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div
+              style="width:45%;display: flex; flex-direction: column;justify-content: space-between;align-items: flex-start;">
+              <div style="width:100%;display:flex; flex-direction: column; height: 50%;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                  <div class="text">
+                    Bons d’achats utilisés
+                  </div>
+                  <div class="info">
+                    i
+                  </div>
+                </div>
+                <div>
+                  <mat-slider [value]="type==='pro'? profile.pro[id].stats.used :0" class="slider" disabled="true"
+                              max="500"
+                              min="0"></mat-slider>
+                  <div style="transform: translateY(-20px); color: var(--cycle-grey);">
+                    {{type === 'pro' ? profile.pro[id].stats.used : 0}} €
+                  </div>
+                </div>
+
+              </div>
+              <div style="width:100%;display:flex; flex-direction: column; height: 50%;">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+
+
+      <div style="margin:auto 50px auto 0;height: 80%;width: 3px;background: var(--cycle-grey); opacity: 0.48;"></div>
+      <div style="display:flex;flex-direction:column;justify-content:space-evenly;align-items:start;width:40%;">
+        <div style="display: flex;align-items: center;justify-content: space-between;">
+          <div class="text">
+            Trophées
+          </div>
+          <img src="assets/img/Icon/trophy.png" style="max-height:53px;max-width:47px">
+        </div>
+        <div style="display:flex; flex-direction:column; justify-content: space-evenly;width: 100%; height: 60%;">
+          <div style="display:flex;width: 100%; justify-content: space-evenly;">
+            <profile-prize [img]="infos.trophies[0]" [locked]="infos.trophies[0]===undefined"></profile-prize>
+            <profile-prize [img]="infos.trophies[1]" [locked]="infos.trophies[1]===undefined"></profile-prize>
+            <profile-prize [img]="infos.trophies[2]" [locked]="infos.trophies[2]===undefined"></profile-prize>
+            <profile-prize [img]="infos.trophies[3]" [locked]="infos.trophies[3]===undefined"></profile-prize>
+          </div>
+          <div style="display:flex;justify-content: space-evenly; width: 100%;">
+            <profile-prize [img]="infos.trophies[4]" [locked]="infos.trophies[4]===undefined"></profile-prize>
+            <profile-prize [locked]="true"></profile-prize>
+            <profile-prize [locked]="true"></profile-prize>
+            <profile-prize [locked]="true"></profile-prize>
+          </div>
+          <div style="display:flex;justify-content: space-evenly; width: 100%;">
+            <profile-prize [locked]="true"></profile-prize>
+            <profile-prize [locked]="true"></profile-prize>
+            <profile-prize [locked]="true"></profile-prize>
+            <profile-prize [locked]="true"></profile-prize>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </shared-card>
+</div>
+
+

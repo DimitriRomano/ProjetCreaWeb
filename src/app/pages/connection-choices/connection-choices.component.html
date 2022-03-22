@@ -1,0 +1,18 @@
+<div class="connection-choice">
+  <div class="card-1 m-8">
+    <shared-card-text (click)="router.navigateByUrl('login/user', {state :{name:'IMAGES-02.png', role:'user'  }});"
+                      subtitle="Se déplacer durablement." textButton="Connexion" title="Utilisateur"></shared-card-text>
+  </div>
+  <div class="card-2 m-8">
+    <shared-card-text
+      (click)="router.navigateByUrl('login/professional', {state :{name:'IMAGES-01.png', role:'professional' }});"
+      subtitle="Acteur d'un système durable."
+      textButton="Connexion" title="Professionnel"></shared-card-text>
+  </div>
+  <div class="image place-self-center	">
+    <img alt="" src="assets/img/Asset-1-01.png">
+  </div>
+</div>
+
+
+<shared-footer></shared-footer>

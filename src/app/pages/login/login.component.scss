@@ -1,0 +1,28 @@
+.login-page {
+  width: 100vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Forms Image";
+}
+
+.forms {
+  grid-area: Forms;
+}
+
+.image {
+  grid-area: Image;
+  width: 80%;
+}
+
+.shadow {
+  box-shadow: -3px 53px 0px 21px rgba(161, 206, 151, 0.15), 0px 10px 20px #74747429;
+}
+
+
+
+

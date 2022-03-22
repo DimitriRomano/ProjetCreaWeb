@@ -1,0 +1,15 @@
+<div class="flex-col">
+<!--  A MODIFIER : faire un partnersList.lenght / 2 ...-->
+  <div class="partnerSwipe flex">
+    <div *ngFor="let partner of partnersList | slice:0:10" class="card partner-card">
+      <img src="assets/img/partner/{{ partner.imageName }}" alt="">
+      <span>{{ partner.name }}</span>
+    </div>
+  </div>
+  <div class="partnerSwipe flex">
+    <div *ngFor="let partner of partnersList | slice:11:20" class="card partner-card">
+      <img src="assets/img/partner/{{ partner.imageName }}" alt="">
+      <span>{{ partner.name }}</span>
+    </div>
+  </div>
+</div>
