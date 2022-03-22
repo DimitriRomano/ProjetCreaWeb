@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CardTextComponent } from './card/card-text/card-text.component';
 import { CardImageComponent } from './card/card-image/card-image.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { CardComponent } from './card/card.component';
 import { PartnerComponent } from './card/partner/partner.component';
 import { CardDoubleColComponent } from './card/card-double-col/card-double-col.component';
 
@@ -19,9 +20,10 @@ import { CardDoubleColComponent } from './card/card-double-col/card-double-col.c
     CardImageComponent,
     PartnerComponent,
     CardDoubleColComponent,
+    CardComponent,
   ],
   imports: [CommonModule, FontAwesomeModule],
-    exports: [
+  exports: [
         ButtonComponent,
         NavbarComponent,
         CardTextComponent,
@@ -29,6 +31,8 @@ import { CardDoubleColComponent } from './card/card-double-col/card-double-col.c
         FooterComponent,
         PartnerComponent,
         CardDoubleColComponent,
-    ],
+    CardComponent,
+  ],
+
 })
 export class SharedModule {}
