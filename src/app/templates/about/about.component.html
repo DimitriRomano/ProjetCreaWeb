@@ -1,10 +1,12 @@
 <div class="container-about">
-    <div class="card-about">
-        <shared-card-text [paragraph]="paragraphe" [title]="title" [subtitle]="subtitle" [textButton]="textButton"></shared-card-text>
-    </div>
-    <div class="img-about">
-        <img src="assets/img/{{imageSrc}}" alt="{{imageAlt}}">
-    </div>
+  <div class="card-about">
+    <shared-card-text
+      (click)="router.navigateByUrl('/templates/service');"
+      [paragraph]="paragraphe" [subtitle]="subtitle" [textButton]="textButton" [title]="title"></shared-card-text>
+  </div>
+  <div class="img-about">
+    <img alt="{{imageAlt}}" src="assets/img/{{imageSrc}}">
+  </div>
 
 </div>
 

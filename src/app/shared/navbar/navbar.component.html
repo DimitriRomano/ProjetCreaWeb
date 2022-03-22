@@ -1,25 +1,25 @@
-
 <div class="h-[10vh] flex justify-between items-center px-8 py-5">
-    <div>
-        <img alt="Logo" class="w-[202px] h-[44px] object-cover" src="./assets/img/LOGOTYPE-VERT.png">
-    </div>
-    <div>
-        <ul class="flex flex-row align-baseline	">
-          
-            <shared-button variant="text" color="var(--cycle-black)" (click)="router.navigateByUrl('/templates/home');" text="Accueil">
+  <div>
+    <img alt="Logo" class="w-[202px] h-[44px] object-cover" src="./assets/img/LOGOTYPE-VERT.png">
+  </div>
+  <div>
+    <ul class="flex flex-row align-baseline	">
 
-            </shared-button>
-            <shared-button variant="text" color="var(--cycle-black)" (click)="router.navigateByUrl('/templates/about');" text="À propos">
+      <shared-button (click)="router.navigateByUrl('/templates/home');" color="var(--cycle-black)" text="Accueil"
+                     variant="text">
 
-            </shared-button>
-            <shared-button variant="text" color="var(--cycle-black)" (click)="router.navigateByUrl('/services');" text="Services">
+      </shared-button>
+      <shared-button (click)="router.navigateByUrl('/templates/about');" color="var(--cycle-black)" text="À propos"
+                     variant="text">
 
-                </shared-button>
-                <shared-button variant="text" color="var(--cycle-black)" (click)="router.navigateByUrl('/map');" text="Carte">
+      </shared-button>
+      <shared-button (click)="router.navigateByUrl('/templates/service');" color="var(--cycle-black)" text="Services"
+                     variant="text">
 
-                </shared-button>
-                <shared-button color="var(--cycle-green)" (click)="router.navigateByUrl('/profile');" text="Mon profil">
-            </shared-button>
-        </ul>
-    </div>
+
+      </shared-button>
+      <shared-button (click)="router.navigateByUrl('/profile');" color="var(--cycle-green)" text="Mon profil">
+      </shared-button>
+    </ul>
+  </div>
 </div>

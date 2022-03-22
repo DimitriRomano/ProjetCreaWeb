@@ -1,13 +1,28 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { ConnectionChoicesComponent } from './pages/connection-choices/connection-choices.component';
-import { LoginComponent } from './pages/login/login.component';
-import { PageComponent as ProfilePage } from './profile/page/page.component';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {ConnectionChoicesComponent} from './pages/connection-choices/connection-choices.component';
+import {LoginComponent} from './pages/login/login.component';
+import {PageComponent as ProfilePage} from './profile/page/page.component';
+import {HomeComponent} from "./templates/home/home.component";
+import {AboutComponent} from "./templates/about/about.component";
+import {ServiceHomeComponent} from "./pages/service-home/service-home.component";
+import {MapComponent} from "./map/map/map.component";
+import {ServicePartnerComponent} from "./pages/service-partner/service-partner.component";
+import {ServiceApplicationComponent} from "./pages/service-application/service-application.component";
 
 
 const routes: Routes = [
-  {path : 'templates/home,', component: HomeComponent},
-  { path: 'templates/about', component: AboutComponent},
+
+  {path: 'templates/home,', component: HomeComponent},
+  {path: 'templates/about', component: AboutComponent},
+  {path: 'templates/service', component: ServiceHomeComponent},
+  {path: 'templates/partners', component: ServicePartnerComponent},
+  {path: 'templates/application', component: ServiceApplicationComponent},
+
+
+  {path: 'map', component: MapComponent},
+
+
   {path: 'profile', component: ConnectionChoicesComponent},
   {
     path: 'login/user',

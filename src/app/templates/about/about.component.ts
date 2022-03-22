@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Router} from "@angular/router";
+
+Router
 
 @Component({
   selector: 'app-about',
@@ -13,7 +16,8 @@ export class AboutComponent implements OnInit {
   imageSrc = 'Asset 9-02.png'
   imageAlt = 'cycleMan'
 
-  constructor() { }
+  constructor(public router: Router) {
+  }
 
   ngOnInit(): void {
   }
