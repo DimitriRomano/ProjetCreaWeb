@@ -1,31 +1,19 @@
 <div class="service-home">
-  <div class="img-services-home">
-    <img src="assets/img/Asset%209-03.png">
-  </div>
-  <div class="reseau-cycle">
-    <shared-card-text (click)="router.navigateByUrl('/map');"
-                      subtitle="La carte de nos services."
-                      textButton="Découvrir"
-                      title="Le réseau Cycle">
-    </shared-card-text>
-  </div>
-  <div class="list-partner">
-    <shared-card-text (click)="router.navigateByUrl('/templates/partners');"
-                      subtitle="Les acteurs de demain."
-                      textButton="Découvrir"
-                      title="Liste des partenaires."
-    >
-    </shared-card-text>
-  </div>
-  <div class="application">
-    <shared-card-image
-      (click)="router.navigateByUrl('/templates/application');" nameImage="phone.png"
-      subtitle="Partout avec vous."
-      textButton="Découvrir"
-      title="Application.">
-    </shared-card-image>
-  </div>
+    <div class="img-services-home">
+        <img src="assets/img/Asset%209-03.png">
+    </div>
+    <div class="reseau-cycle">
+        <shared-card-text (click)="router.navigateByUrl('/map');" subtitle="La carte de nos services." textButton="Découvrir" title="Le réseau Cycle">
+        </shared-card-text>
+    </div>
+    <div class="list-partner">
+        <shared-card-text (click)="router.navigateByUrl('/templates/partners');" subtitle="Les acteurs de demain." textButton="Découvrir" title="Liste des partenaires.">
+        </shared-card-text>
+    </div>
+    <div class="application">
+        <shared-card-image (click)="router.navigateByUrl('/templates/application');" nameImage="phone.png" subtitle="Partout avec vous." textButton="Découvrir" title="Application.">
+        </shared-card-image>
+    </div>
 </div>
 
 <shared-footer></shared-footer>
-

@@ -10,10 +10,10 @@ export class CardComponent implements OnInit {
   backgroundColor = '';
 
   @Input()
-  height = 'fit-content';
+  height = '90%';
 
   @Input()
-  width = 'fit-content';
+  width = '';
 
   @Input()
   margin = '1rem 2rem';

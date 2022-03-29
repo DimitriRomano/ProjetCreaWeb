@@ -30,7 +30,7 @@ export class ButtonComponent implements OnInit {
    * (default 30px)
    */
   @Input()
-  fontSize = '30px';
+  fontSize = '18px';
 
   /**
    * padding block
@@ -102,6 +102,7 @@ export class ButtonComponent implements OnInit {
       fontSize: this.fontSize,
       display: 'block',
       whiteSpace: 'nowrap',
+      transition: 'all 0.2s ease-in-out',
     };
   }
 }
