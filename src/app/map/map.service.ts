@@ -50,6 +50,36 @@ export class MapService {
      
     });
   }
+
+  // addMarker(geojson: GeoJson): void {
+  //   const marker = new mapboxgl.Marker({
+  //     draggable: false
+  //   })
+  //   .setLngLat(geojson.coordinates)
+  //   .addTo(this.map);
+  // }
+
+  // addLayer(geojson: GeoJson): void {
+  //   this.map.addLayer({
+  //     id: geojson.id,
+  //     type: 'fill',
+  //     source: {
+  //       type: 'geojson',
+  //       data: {
+  //         type: 'Feature',
+  //         geometry: {
+  //           type: 'Polygon',
+  //           coordinates: geojson.coordinates
+  //         }
+  //       }
+  //     },
+  //     layout: {},
+  //     paint: {
+  //       'fill-color': geojson.color,
+  //       'fill-opacity': 0.8
+  //     }
+  //   });
+  // }
   
     
 }
